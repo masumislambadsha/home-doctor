@@ -5,7 +5,7 @@ import { Outlet } from 'react-router';
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className='bg-base-300'>
       <Navbar></Navbar>
       <div className='container mx-auto justify-items-center'>
          <Outlet></Outlet>

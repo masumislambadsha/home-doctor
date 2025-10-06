@@ -5,7 +5,7 @@ import useProducts from "../Hooks/useProducts";
 
 const Home = () => {
   // const products = useLoaderData();
-  const {products, loading, error} = useProducts()
+  const {products} = useProducts()
 
   const featuredProducts = products.slice(9,15)
 

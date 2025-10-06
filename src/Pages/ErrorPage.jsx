@@ -1,9 +1,11 @@
 import React from "react";
+import { Link, useRouteError } from "react-router";
 
 const ErrorPage = () => {
-
+    const error = useRouteError()
   return (
     <div>
+      <div>{error.message}</div>
       <main className="grid min-h-screen place-items-center bg-gray-50 px-6 py-24">
         <div className="text-center">
           <p className="text-base font-semibold text-green-600">404</p>

@@ -16,7 +16,7 @@ const WishList = () => {
     } else if (sortOrder === "pricing-dsc") {
       return [...wishlist.sort((a, b) => b.price - a.price)];
     } else {
-      return wishlist;
+      return wishlist; 
     }
   })();
   const handleRemove = (id) => {

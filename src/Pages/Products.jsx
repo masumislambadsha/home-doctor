@@ -13,7 +13,7 @@ const Products = () => {
 
   return (
     <div>
-      <div className="flex justify-between mt-4">
+      <div className="flex md:flex-row flex-col md:gap-0 gap-4 justify-between mt-4 md:p-0 px-2">
         <h1 className="card-title text-2xl text-center">
           All Products{" "}
           <span className="text-sm mt-2.5">
@@ -29,7 +29,7 @@ const Products = () => {
           />
         </label>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 px-4 md:px-8 lg:px-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 mt-5 px-4 md:px-8 lg:px-12">
         {seachedProduct.map((product) => (
           <Product key={product.id} product={product}></Product>
         ))}

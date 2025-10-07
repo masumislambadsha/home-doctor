@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const Product = ({ product }) => {
   const { name, image, price, category, description, id } = product;
   return (
-    <div className="card lg:w-[400px] lg:h-[600px] h-[600px] bg-base-100  shadow-2xl hover:scale-102 transition duration-500  overflow-hidden hover:bg-gray-300 hover:z-10">
+    <div className="card lg:w-[400px] lg:h-[600px] h-[600px] bg-base-100  shadow-xl hover:scale-102 transition duration-500  overflow-hidden hover:bg-gray-300 hover:z-10">
       <figure className="mx-auto">
         <img className="h-[570px]" src={image} />
       </figure>
